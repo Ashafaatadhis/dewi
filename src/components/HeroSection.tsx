@@ -90,7 +90,7 @@ const HeroSection = () => {
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -right-8 top-12 gradient-glass px-4 py-2 rounded-full shadow-soft border border-white/30"
               >
-                <span className="text-sm font-medium">5+ Years Exp</span>
+                <span className="text-sm font-medium">Data Enthusiast</span>
               </motion.div>
 
               <motion.div
@@ -98,7 +98,7 @@ const HeroSection = () => {
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                 className="absolute -left-8 bottom-20 gradient-glass px-4 py-2 rounded-full shadow-soft border border-white/30"
               >
-                <span className="text-sm font-medium">50+ Projects</span>
+                <span className="text-sm font-medium">10+ Projects</span>
               </motion.div>
             </div>
           </motion.div>

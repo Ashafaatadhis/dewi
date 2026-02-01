@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="text-2xl font-serif text-foreground">
-              Amanda<span className="text-primary">.</span>
+              Dewi Wati<span className="text-primary">.</span>
             </a>
 
             {/* Desktop Navigation */}

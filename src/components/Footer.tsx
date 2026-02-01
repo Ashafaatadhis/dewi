@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Logo */}
           <a href="#" className="text-xl font-serif text-foreground">
-            Amanda<span className="text-primary">.</span>
+            Dewi Wati<span className="text-primary">.</span>
           </a>
 
           {/* Copyright */}
@@ -18,7 +18,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex items-center gap-1 text-sm text-muted-foreground"
           >
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by Amanda © 2024
+            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> by Dewi Wati © 2024
           </motion.p>
 
           {/* Quick links */}

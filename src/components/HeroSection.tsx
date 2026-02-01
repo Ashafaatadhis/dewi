@@ -33,7 +33,7 @@ const HeroSection = () => {
               className="text-5xl md:text-7xl font-serif text-foreground leading-tight mb-6"
             >
               Halo, Saya{" "}
-              <span className="italic text-primary">Amanda</span>
+              <span className="italic text-primary">Dewi Wati</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -79,7 +79,7 @@ const HeroSection = () => {
               <div className="relative w-72 h-96 md:w-80 md:h-[450px] overflow-hidden organic-border shadow-elevated">
                 <img
                   src={profilePhoto}
-                  alt="Amanda - Creative Designer"
+                  alt="Dewi Wati - Creative Designer"
                   className="w-full h-full object-cover"
                 />
               </div>

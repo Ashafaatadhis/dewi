@@ -7,31 +7,31 @@ import work4 from "@/assets/work-4.jpg";
 const works = [
   {
     id: 1,
-    title: "Lumière Beauty App",
-    category: "UI/UX Design",
+    title: "Sales Dashboard Analytics",
+    category: "Data Visualization",
     image: work1,
-    description: "Mobile app design untuk brand skincare premium",
+    description: "Dashboard interaktif untuk analisis penjualan menggunakan Python dan Tableau",
   },
   {
     id: 2,
-    title: "Rosé Studio Identity",
-    category: "Brand Identity",
+    title: "Customer Segmentation",
+    category: "Machine Learning",
     image: work2,
-    description: "Complete brand identity untuk photography studio",
+    description: "Analisis clustering untuk segmentasi pelanggan e-commerce",
   },
   {
     id: 3,
-    title: "Maison de Mode",
-    category: "Web Design",
+    title: "Portfolio Website",
+    category: "Web Development",
     image: work3,
-    description: "E-commerce website untuk fashion boutique",
+    description: "Website portfolio responsive menggunakan React dan Tailwind CSS",
   },
   {
     id: 4,
-    title: "Bloom Cosmetics",
-    category: "Packaging Design",
+    title: "COVID-19 Data Analysis",
+    category: "Data Analysis",
     image: work4,
-    description: "Premium packaging untuk skincare line",
+    description: "Analisis dan visualisasi data COVID-19 Indonesia dengan Python",
   },
 ];
 
@@ -54,7 +54,7 @@ const WorksSection = () => {
             Portfolio
           </p>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground">
-            Karya <span className="italic text-primary">Terpilih</span>
+            Project <span className="italic text-primary">Terpilih</span>
           </h2>
         </motion.div>
 
@@ -106,7 +106,7 @@ const WorksSection = () => {
           className="text-center mt-12"
         >
           <button className="px-8 py-4 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-            Lihat Semua Karya
+            Lihat Semua Project
           </button>
         </motion.div>
       </div>

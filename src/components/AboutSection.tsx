@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   const skills = [
-    { name: "UI/UX Design", level: 95 },
-    { name: "Brand Identity", level: 88 },
-    { name: "Illustration", level: 82 },
-    { name: "Motion Design", level: 75 },
+    { name: "Data Analysis", level: 90 },
+    { name: "Python", level: 85 },
+    { name: "SQL", level: 88 },
+    { name: "Web Development", level: 80 },
   ];
 
   return (
@@ -36,29 +36,29 @@ const AboutSection = () => {
                     whileHover={{ scale: 1.05 }}
                     className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
                   >
-                    <span className="block text-4xl font-serif text-primary mb-1">50+</span>
+                    <span className="block text-4xl font-serif text-primary mb-1">10+</span>
                     <span className="text-sm text-muted-foreground">Projects</span>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
                   >
-                    <span className="block text-4xl font-serif text-primary mb-1">30+</span>
-                    <span className="text-sm text-muted-foreground">Clients</span>
+                    <span className="block text-4xl font-serif text-primary mb-1">Sem 6</span>
+                    <span className="text-sm text-muted-foreground">Semester</span>
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
+                  >
+                    <span className="block text-4xl font-serif text-primary mb-1">3.8</span>
+                    <span className="text-sm text-muted-foreground">IPK</span>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
                   >
                     <span className="block text-4xl font-serif text-primary mb-1">5+</span>
-                    <span className="text-sm text-muted-foreground">Years</span>
-                  </motion.div>
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
-                  >
-                    <span className="block text-4xl font-serif text-primary mb-1">15</span>
-                    <span className="text-sm text-muted-foreground">Awards</span>
+                    <span className="text-sm text-muted-foreground">Sertifikat</span>
                   </motion.div>
                 </div>
               </div>
@@ -76,18 +76,18 @@ const AboutSection = () => {
               Tentang Saya
             </p>
             <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
-              Menciptakan Desain yang{" "}
-              <span className="italic text-primary">Bermakna</span>
+              Mengubah Data Menjadi{" "}
+              <span className="italic text-primary">Insight</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Saya adalah seorang creative designer dengan passion yang mendalam untuk menciptakan 
-              pengalaman visual yang tidak hanya indah, tetapi juga fungsional dan bermakna. 
-              Setiap proyek adalah kesempatan untuk menceritakan sebuah kisah melalui desain.
+              Saya adalah mahasiswa Teknik Informatika dengan passion yang mendalam di bidang 
+              Data Analysis dan pengembangan web. Saya percaya bahwa setiap data memiliki cerita 
+              yang perlu diungkap untuk menghasilkan keputusan yang lebih baik.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Dengan pengalaman lebih dari 5 tahun, saya telah bekerja dengan berbagai brand 
-              dari startup hingga perusahaan besar, membantu mereka mengkomunikasikan identitas 
-              mereka secara visual.
+              Selama kuliah, saya aktif mengerjakan berbagai project analisis data dan web development. 
+              Saya terus belajar teknologi terbaru seperti Python, SQL, dan tools visualisasi data 
+              untuk mengasah kemampuan saya di bidang ini.
             </p>
 
             {/* Skills */}

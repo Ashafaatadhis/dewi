@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Instagram, Linkedin, Twitter, MapPin, Send } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin, Send } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -21,18 +21,18 @@ const ContactSection = () => {
               Hubungi Saya
             </p>
             <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-6">
-              Mari <span className="italic text-primary">Berkolaborasi</span>
+              Mari <span className="italic text-primary">Terhubung</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8 max-w-md">
-              Tertarik untuk bekerja sama atau hanya ingin menyapa? 
-              Jangan ragu untuk menghubungi saya. Saya selalu terbuka 
-              untuk diskusi proyek baru dan ide-ide kreatif.
+              Tertarik untuk berdiskusi tentang project data analysis, 
+              kolaborasi, atau kesempatan magang? Jangan ragu untuk 
+              menghubungi saya. Saya selalu terbuka untuk peluang baru!
             </p>
 
             {/* Contact details */}
             <div className="space-y-4 mb-8">
               <motion.a
-                href="mailto:hello@amanda.design"
+                href="mailto:dewiwati@student.university.ac.id"
                 whileHover={{ x: 5 }}
                 className="flex items-center gap-4 group"
               >
@@ -40,7 +40,7 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <span className="text-foreground group-hover:text-primary transition-colors">
-                  hello@amanda.design
+                  dewiwati@student.university.ac.id
                 </span>
               </motion.a>
 
@@ -60,15 +60,15 @@ const ContactSection = () => {
             {/* Social links */}
             <div className="flex gap-4">
               {[
-                { icon: Instagram, href: "#" },
-                { icon: Twitter, href: "#" },
-                { icon: Linkedin, href: "#" },
+                { icon: Github, href: "#", label: "GitHub" },
+                { icon: Linkedin, href: "#", label: "LinkedIn" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.href}
                   whileHover={{ y: -4 }}
                   className="w-12 h-12 rounded-full border border-border bg-card flex items-center justify-center hover:border-primary hover:text-primary transition-all duration-300"
+                  aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5" />
                 </motion.a>
@@ -125,7 +125,7 @@ const ContactSection = () => {
                   </label>
                   <textarea
                     rows={4}
-                    placeholder="Ceritakan tentang proyek Anda..."
+                    placeholder="Ceritakan tentang kesempatan kolaborasi atau pertanyaan Anda..."
                     className="w-full px-4 py-3 rounded-xl bg-background border border-border focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
                   />
                 </div>

@@ -4,33 +4,33 @@ import { Award, Star, Medal, Trophy } from "lucide-react";
 const certificates = [
   {
     id: 1,
-    title: "Google UX Design Certificate",
+    title: "Google Data Analytics",
     issuer: "Google",
-    year: "2023",
+    year: "2024",
     icon: Award,
     color: "from-rose-blush to-primary",
   },
   {
     id: 2,
-    title: "Adobe Certified Expert",
-    issuer: "Adobe",
-    year: "2022",
+    title: "Python for Data Science",
+    issuer: "IBM",
+    year: "2024",
     icon: Star,
     color: "from-primary to-nude-400",
   },
   {
     id: 3,
-    title: "Awwwards SOTD Winner",
-    issuer: "Awwwards",
+    title: "SQL for Data Analysis",
+    issuer: "Coursera",
     year: "2023",
     icon: Trophy,
     color: "from-nude-400 to-accent",
   },
   {
     id: 4,
-    title: "Figma Product Design",
-    issuer: "Figma",
-    year: "2024",
+    title: "Web Development",
+    issuer: "freeCodeCamp",
+    year: "2023",
     icon: Medal,
     color: "from-accent to-rose-blush",
   },
@@ -113,13 +113,13 @@ const CertificatesSection = () => {
                   className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center"
                 >
                   <span className="text-primary-foreground text-xs font-bold">
-                    {["G", "A", "F", "M"][i]}
+                    {["G", "I", "C", "F"][i]}
                   </span>
                 </div>
               ))}
             </div>
             <span className="text-muted-foreground">
-              dan <span className="text-foreground font-medium">10+ sertifikasi</span> lainnya
+              dan <span className="text-foreground font-medium">5+ sertifikasi</span> lainnya
             </span>
           </div>
         </motion.div>

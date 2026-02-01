@@ -33,7 +33,7 @@ const HeroSection = () => {
               className="text-5xl md:text-7xl font-serif text-foreground leading-tight mb-6"
             >
               Halo, Saya{" "}
-              <span className="italic text-primary">Dewi Wati</span>
+              <span className="italic text-primary whitespace-nowrap">Dewi Wati</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}

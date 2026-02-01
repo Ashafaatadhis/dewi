@@ -76,7 +76,7 @@ const HeroSection = () => {
               <div className="absolute -inset-4 gradient-accent opacity-20 organic-border animate-blob" />
               
               {/* Photo container */}
-              <div className="relative w-72 h-96 md:w-80 md:h-[450px] overflow-hidden organic-border shadow-elevated">
+              <div className="relative w-56 h-72 md:w-64 md:h-80 overflow-hidden organic-border shadow-elevated">
                 <img
                   src={profilePhoto}
                   alt="Dewi Wati - Mahasiswa Teknik Informatika"

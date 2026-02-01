@@ -24,7 +24,7 @@ const HeroSection = () => {
               transition={{ delay: 0.3 }}
               className="text-primary font-medium tracking-widest uppercase text-sm mb-4"
             >
-              Creative Designer
+              Mahasiswa Teknik Informatika
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -41,7 +41,7 @@ const HeroSection = () => {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-lg text-muted-foreground max-w-md mb-8 leading-relaxed"
             >
-              Seorang UI/UX Designer & Creative Director yang passionate dalam menciptakan pengalaman digital yang memorable dan estetik.
+              Mahasiswa Teknik Informatika yang passionate dalam pengembangan web dan teknologi. Selalu bersemangat untuk belajar hal baru dan menciptakan solusi digital yang inovatif.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -79,7 +79,7 @@ const HeroSection = () => {
               <div className="relative w-72 h-96 md:w-80 md:h-[450px] overflow-hidden organic-border shadow-elevated">
                 <img
                   src={profilePhoto}
-                  alt="Dewi Wati - Creative Designer"
+                  alt="Dewi Wati - Mahasiswa Teknik Informatika"
                   className="w-full h-full object-cover"
                 />
               </div>

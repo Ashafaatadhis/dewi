@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import work6 from "@/assets/work-6.png";
 import workWemail from "@/assets/work-wemail.png";
+import LaptopMockup from "./LaptopMockup";
 
 const works = [
   {
@@ -10,6 +11,7 @@ const works = [
     image: work6,
     description: "Laporan Praktik Kerja Industri di AN's Computer - SMK Negeri 1 Krangkeng",
     isDocument: true,
+    isLaptop: false,
   },
   {
     id: 2,
@@ -17,7 +19,8 @@ const works = [
     category: "Web Development",
     image: workWemail,
     description: "Aplikasi pembuatan surat berbasis web dengan fitur manajemen template dan dashboard analytics",
-    isDocument: true,
+    isDocument: false,
+    isLaptop: true,
   },
 ];
 
@@ -56,12 +59,22 @@ const WorksSection = () => {
               className={`group relative ${index % 3 === 0 ? 'md:row-span-2' : ''}`}
             >
               <div className="relative overflow-hidden rounded-3xl shadow-elevated">
-                <div className={`${index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden ${work.isDocument ? 'bg-white' : ''}`}>
-                  <img
-                    src={work.image}
-                    alt={work.title}
-                    className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${work.isDocument ? 'object-contain p-4' : 'object-cover'}`}
-                  />
+                <div className={`${index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden ${work.isDocument ? 'bg-white' : 'bg-gradient-to-br from-muted/50 to-background'} flex items-center justify-center p-4`}>
+                  {work.isLaptop ? (
+                    <LaptopMockup className="w-full max-w-[90%] transition-transform duration-700 group-hover:scale-105">
+                      <img
+                        src={work.image}
+                        alt={work.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </LaptopMockup>
+                  ) : (
+                    <img
+                      src={work.image}
+                      alt={work.title}
+                      className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${work.isDocument ? 'object-contain' : 'object-cover'}`}
+                    />
+                  )}
                 </div>
                 
                 {/* Overlay */}

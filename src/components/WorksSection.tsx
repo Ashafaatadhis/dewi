@@ -84,9 +84,9 @@ const works = [
   },
 ];
 
-// Sort works by year (newest first) and take only 4 for display
+// Sort works by year (newest first) and take only 5 for display
 const sortedWorks = [...works].sort((a, b) => parseInt(b.year) - parseInt(a.year));
-const displayedWorks = sortedWorks.slice(0, 4);
+const displayedWorks = sortedWorks.slice(0, 5);
 
 interface WorkCardProps {
   work: typeof works[0];
@@ -209,7 +209,7 @@ const WorksSection = () => {
           </div>
 
           {/* View more button - only show if there are more projects */}
-          {sortedWorks.length > 4 && (
+          {sortedWorks.length > 5 && (
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

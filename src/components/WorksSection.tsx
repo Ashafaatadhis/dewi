@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import work6 from "@/assets/work-6.png";
 import workWemail from "@/assets/work-wemail.png";
 import workKasirIkan from "@/assets/work-kasir-ikan.png";
-import workUxPasarPolis from "@/assets/work-ux-pasar-polis.png";
-import workSupermarketDashboard from "@/assets/work-supermarket-dashboard.png";
 import LaptopMockup from "./LaptopMockup";
 import DocumentMockup from "./DocumentMockup";
 
@@ -35,26 +33,6 @@ const works = [
     year: "2024",
     image: workKasirIkan,
     description: "Penerapan Sistem Informasi Aplikasi Kasir Berbasis Web Untuk Toko Ikan",
-    isDocument: false,
-    isLaptop: true,
-  },
-  {
-    id: 4,
-    title: "UX Case Study Pasar Polis",
-    category: "UI/UX Design",
-    year: "2025",
-    image: workUxPasarPolis,
-    description: "Studi kasus UX untuk aplikasi marketplace asuransi dengan riset pengguna, wireframe, dan desain antarmuka",
-    isDocument: false,
-    isLaptop: true,
-  },
-  {
-    id: 5,
-    title: "Supermarket Sales Dashboard",
-    category: "Data Analysis",
-    year: "2025",
-    image: workSupermarketDashboard,
-    description: "Dashboard analitik penjualan supermarket dengan visualisasi data interaktif dan metrik performa produk",
     isDocument: false,
     isLaptop: true,
   },

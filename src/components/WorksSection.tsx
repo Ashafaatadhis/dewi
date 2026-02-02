@@ -69,6 +69,17 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/api_books",
   },
+  {
+    id: 7,
+    title: "Literally Insight",
+    category: "Mobile Development",
+    year: "2025",
+    image: null,
+    description: "Aplikasi mobile cross-platform menggunakan Flutter dengan dukungan untuk Android, iOS, Web, Windows, macOS, dan Linux",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/mobile-UAS-literally-insight",
+  },
 ];
 
 const WorksSection = () => {

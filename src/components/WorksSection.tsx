@@ -113,6 +113,18 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/sentiment-analysis-tiktok-reviews",
   },
+  {
+    id: 10,
+    title: "Klasifikasi Gambar CIFAR-10 dengan CNN",
+    category: "Deep Learning",
+    year: "2025-12",
+    displayYear: "2025",
+    image: null,
+    description: "Implementasi Convolutional Neural Network (CNN) dengan TensorFlow untuk klasifikasi gambar 6 kelas dari dataset CIFAR-10, lengkap dengan ekspor model ke format TFLite dan TF.js",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/Klasifikasi-Gambar-CIFAR10-dengan-CNN-TensorFlow",
+  },
 ];
 
 // Sort works by year-month (newest first) and take only 5 for display

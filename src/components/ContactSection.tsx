@@ -61,7 +61,7 @@ const ContactSection = () => {
             <div className="flex gap-4">
               {[
                 { icon: Github, href: "https://github.com/Dewiwati", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/dewi-wati-848451364", label: "LinkedIn" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/dewi-wati", label: "LinkedIn" },
               ].map((social, index) => (
                 <motion.a
                   key={index}

@@ -39,7 +39,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-lg text-muted-foreground max-w-md mb-8 leading-relaxed text-right"
+              className="text-lg text-muted-foreground max-w-md mb-8 leading-relaxed"
             >
               Mahasiswa Teknik Informatika yang passionate dalam pengembangan web dan Data Analyst. Selalu bersemangat untuk mengolah data menjadi insight yang bermakna dan menciptakan solusi digital yang inovatif.
             </motion.p>

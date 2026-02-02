@@ -82,6 +82,17 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/mobile-UAS-literally-insight",
   },
+  {
+    id: 8,
+    title: "Fraud Detection & Anomaly Identification",
+    category: "Machine Learning",
+    year: "2025",
+    image: null,
+    description: "Eksplorasi deteksi penipuan dan identifikasi anomali menggunakan teknik klasifikasi (Decision Tree, Random Forest) dan clustering dengan PCA untuk reduksi dimensi",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/Eksplorasi-deteksi-penipuan-fraud-detection-dan-identifikasi-anomali",
+  },
 ];
 
 // Sort works by year (newest first) and take only 5 for display

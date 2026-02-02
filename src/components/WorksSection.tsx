@@ -3,6 +3,7 @@ import work1 from "@/assets/work-1.jpg";
 import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
 import work4 from "@/assets/work-4.jpg";
+import work5 from "@/assets/work-5.png";
 
 const works = [
   {
@@ -32,6 +33,13 @@ const works = [
     category: "Data Analysis",
     image: work4,
     description: "Analisis dan visualisasi data COVID-19 Indonesia dengan Python",
+  },
+  {
+    id: 5,
+    title: "Laporan Praktik Kerja Industri",
+    category: "Networking",
+    image: work5,
+    description: "Memblokir ekstensi file JPG dan PNG menggunakan Web Proxy di AN's Computer",
   },
 ];
 

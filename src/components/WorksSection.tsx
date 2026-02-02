@@ -4,6 +4,7 @@ import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
 import work4 from "@/assets/work-4.jpg";
 import work5 from "@/assets/work-5.png";
+import work6 from "@/assets/work-6.png";
 
 const works = [
   {
@@ -12,6 +13,7 @@ const works = [
     category: "Data Visualization",
     image: work1,
     description: "Dashboard interaktif untuk analisis penjualan menggunakan Python dan Tableau",
+    isDocument: false,
   },
   {
     id: 2,
@@ -19,6 +21,7 @@ const works = [
     category: "Machine Learning",
     image: work2,
     description: "Analisis clustering untuk segmentasi pelanggan e-commerce",
+    isDocument: false,
   },
   {
     id: 3,
@@ -26,6 +29,7 @@ const works = [
     category: "Web Development",
     image: work3,
     description: "Website portfolio responsive menggunakan React dan Tailwind CSS",
+    isDocument: false,
   },
   {
     id: 4,
@@ -33,13 +37,23 @@ const works = [
     category: "Data Analysis",
     image: work4,
     description: "Analisis dan visualisasi data COVID-19 Indonesia dengan Python",
+    isDocument: false,
   },
   {
     id: 5,
-    title: "Laporan Praktik Kerja Industri",
+    title: "Laporan PKL - Web Proxy",
     category: "Networking",
     image: work5,
     description: "Memblokir ekstensi file JPG dan PNG menggunakan Web Proxy di AN's Computer",
+    isDocument: true,
+  },
+  {
+    id: 6,
+    title: "Laporan PKL - Judul Lengkap",
+    category: "Networking",
+    image: work6,
+    description: "Laporan Praktik Kerja Industri di AN's Computer - SMK Negeri 1 Krangkeng",
+    isDocument: true,
   },
 ];
 
@@ -78,11 +92,11 @@ const WorksSection = () => {
               className={`group relative ${index % 3 === 0 ? 'md:row-span-2' : ''}`}
             >
               <div className="relative overflow-hidden rounded-3xl shadow-elevated">
-                <div className={`${index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden`}>
+                <div className={`${index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden ${work.isDocument ? 'bg-white' : ''}`}>
                   <img
                     src={work.image}
                     alt={work.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${work.isDocument ? 'object-contain p-4' : 'object-cover'}`}
                   />
                 </div>
                 

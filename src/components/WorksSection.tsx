@@ -1,54 +1,9 @@
 import { motion } from "framer-motion";
-import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
-import work4 from "@/assets/work-4.jpg";
-import work5 from "@/assets/work-5.png";
 import work6 from "@/assets/work-6.png";
 
 const works = [
   {
     id: 1,
-    title: "Sales Dashboard Analytics",
-    category: "Data Visualization",
-    image: work1,
-    description: "Dashboard interaktif untuk analisis penjualan menggunakan Python dan Tableau",
-    isDocument: false,
-  },
-  {
-    id: 2,
-    title: "Customer Segmentation",
-    category: "Machine Learning",
-    image: work2,
-    description: "Analisis clustering untuk segmentasi pelanggan e-commerce",
-    isDocument: false,
-  },
-  {
-    id: 3,
-    title: "Portfolio Website",
-    category: "Web Development",
-    image: work3,
-    description: "Website portfolio responsive menggunakan React dan Tailwind CSS",
-    isDocument: false,
-  },
-  {
-    id: 4,
-    title: "COVID-19 Data Analysis",
-    category: "Data Analysis",
-    image: work4,
-    description: "Analisis dan visualisasi data COVID-19 Indonesia dengan Python",
-    isDocument: false,
-  },
-  {
-    id: 5,
-    title: "Laporan PKL - Web Proxy",
-    category: "Networking",
-    image: work5,
-    description: "Memblokir ekstensi file JPG dan PNG menggunakan Web Proxy di AN's Computer",
-    isDocument: true,
-  },
-  {
-    id: 6,
     title: "Laporan PKL - Judul Lengkap",
     category: "Networking",
     image: work6,

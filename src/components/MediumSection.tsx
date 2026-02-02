@@ -12,7 +12,7 @@ const mediumArticles = [
     claps: 50,
     image: workUxPasarPolis,
     description: "Studi kasus UX untuk aplikasi marketplace asuransi Pasar Polis, mencakup riset pengguna, analisis pain points, wireframing, dan solusi desain antarmuka yang user-friendly",
-    link: "#",
+    link: "https://medium.com/@dewiwati182004/ux-case-study-pasar-polis-9df4cba710a7",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const mediumArticles = [
     claps: 50,
     image: workSupermarketDashboard,
     description: "Analisis data penjualan supermarket dengan visualisasi interaktif menggunakan dashboard analytics untuk mengidentifikasi tren penjualan dan performa produk",
-    link: "#",
+    link: "https://medium.com/@dewiwati182004/supermarket-sales-dashboard-7f9daf036429",
   },
 ];
 
@@ -114,7 +114,7 @@ const MediumSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="#"
+            href="https://medium.com/@dewiwati182004"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 border-2 border-primary text-primary rounded-full font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300"

@@ -17,7 +17,7 @@ const works = [
     category: "Web Development",
     image: workWemail,
     description: "Aplikasi pembuatan surat berbasis web dengan fitur manajemen template dan dashboard analytics",
-    isDocument: false,
+    isDocument: true,
   },
 ];
 

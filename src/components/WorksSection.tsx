@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import work6 from "@/assets/work-6.png";
+import workWemail from "@/assets/work-wemail.png";
 
 const works = [
   {
@@ -9,6 +10,14 @@ const works = [
     image: work6,
     description: "Laporan Praktik Kerja Industri di AN's Computer - SMK Negeri 1 Krangkeng",
     isDocument: true,
+  },
+  {
+    id: 2,
+    title: "WeMAIL",
+    category: "Web Development",
+    image: workWemail,
+    description: "Aplikasi pembuatan surat berbasis web dengan fitur manajemen template dan dashboard analytics",
+    isDocument: false,
   },
 ];
 

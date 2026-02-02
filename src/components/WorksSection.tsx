@@ -7,10 +7,10 @@ import DocumentMockup from "./DocumentMockup";
 const works = [
   {
     id: 1,
-    title: "Laporan PKL - Judul Lengkap",
+    title: "Laporan PKL - Web Proxy",
     category: "Networking",
     image: work6,
-    description: "Laporan Praktik Kerja Industri di AN's Computer - SMK Negeri 1 Krangkeng",
+    description: "Memblokir Ekstensi File JPG dan PNG Menggunakan Web Proxy di AN's Computer",
     isDocument: true,
     isLaptop: false,
   },

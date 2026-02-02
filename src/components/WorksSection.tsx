@@ -149,6 +149,18 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/Workflow-CI",
   },
+  {
+    id: 13,
+    title: "Eksperimen Supervised ML",
+    category: "Machine Learning",
+    year: "2025-12",
+    displayYear: "2025",
+    image: null,
+    description: "Eksperimen Supervised Machine Learning untuk klasifikasi kanker payudara menggunakan dataset Breast Cancer Wisconsin dengan MLflow tracking dan GitHub Actions CI/CD",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/Eksperimen_SML_Dewi-Wati",
+  },
 ];
 
 // Sort works by year-month (newest first) and take only 5 for display

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import work6 from "@/assets/work-6.png";
 import workWemail from "@/assets/work-wemail.png";
 import LaptopMockup from "./LaptopMockup";
+import DocumentMockup from "./DocumentMockup";
 
 const works = [
   {
@@ -59,7 +60,7 @@ const WorksSection = () => {
               className={`group relative ${index % 3 === 0 ? 'md:row-span-2' : ''}`}
             >
               <div className="relative overflow-hidden rounded-3xl shadow-elevated">
-                <div className={`${index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden ${work.isDocument ? 'bg-white' : 'bg-gradient-to-br from-muted/50 to-background'} flex items-center justify-center p-4`}>
+                <div className={`${index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden bg-gradient-to-br from-muted/30 via-background to-muted/20 flex items-center justify-center p-6`}>
                   {work.isLaptop ? (
                     <LaptopMockup className="w-full max-w-[90%] transition-transform duration-700 group-hover:scale-105">
                       <img
@@ -68,11 +69,19 @@ const WorksSection = () => {
                         className="w-full h-full object-cover"
                       />
                     </LaptopMockup>
+                  ) : work.isDocument ? (
+                    <DocumentMockup className="h-full max-h-[95%] transition-transform duration-700 group-hover:scale-105">
+                      <img
+                        src={work.image}
+                        alt={work.title}
+                        className="w-full h-full object-contain"
+                      />
+                    </DocumentMockup>
                   ) : (
                     <img
                       src={work.image}
                       alt={work.title}
-                      className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${work.isDocument ? 'object-contain' : 'object-cover'}`}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   )}
                 </div>

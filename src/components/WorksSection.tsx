@@ -10,7 +10,7 @@ const works = [
     id: 1,
     title: "Laporan PKL - Web Proxy",
     category: "Networking",
-    year: "2024",
+    year: "2021",
     image: work6,
     description: "Memblokir Ekstensi File JPG dan PNG Menggunakan Web Proxy",
     isDocument: true,

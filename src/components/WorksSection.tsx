@@ -13,7 +13,8 @@ const works = [
     id: 1,
     title: "Laporan PKL - Web Proxy",
     category: "Networking",
-    year: "2021",
+    year: "2021-01",
+    displayYear: "2021",
     image: work6,
     description: "Memblokir Ekstensi File JPG dan PNG Menggunakan Web Proxy",
     isDocument: true,
@@ -23,7 +24,8 @@ const works = [
     id: 2,
     title: "WeMAIL",
     category: "Web Development",
-    year: "2025",
+    year: "2025-01",
+    displayYear: "2025",
     image: workWemail,
     description: "Aplikasi pembuatan surat berbasis web dengan fitur manajemen template dan dashboard analytics",
     isDocument: false,
@@ -33,7 +35,8 @@ const works = [
     id: 3,
     title: "Aplikasi Kasir Toko Ikan",
     category: "Web Development",
-    year: "2024",
+    year: "2024-01",
+    displayYear: "2024",
     image: workKasirIkan,
     description: "Penerapan Sistem Informasi Aplikasi Kasir Berbasis Web Untuk Toko Ikan",
     isDocument: false,
@@ -43,7 +46,8 @@ const works = [
     id: 4,
     title: "Supermarket Sales Dashboard Analysis",
     category: "Data Analysis",
-    year: "2025",
+    year: "2025-02",
+    displayYear: "2025",
     image: workScientificPoster,
     description: "Poster ilmiah analisis dashboard penjualan supermarket menggunakan Microsoft Excel dan Power BI untuk visualisasi data dan insight bisnis",
     isDocument: true,
@@ -53,7 +57,8 @@ const works = [
     id: 5,
     title: "Prediksi Harga Rumah Boston",
     category: "Data Mining",
-    year: "2025",
+    year: "2025-06",
+    displayYear: "2025",
     image: null,
     description: "Proyek prediksi harga rumah menggunakan dataset Boston Housing dengan model XGBoost yang mencapai akurasi R² 0.905, mengungguli Random Forest dan Regresi Linear",
     isDocument: false,
@@ -64,7 +69,8 @@ const works = [
     id: 6,
     title: "API Books",
     category: "Backend Development",
-    year: "2025",
+    year: "2025-06",
+    displayYear: "2025",
     image: null,
     description: "RESTful API untuk manajemen buku menggunakan TypeScript, Express, dan Prisma ORM dengan fitur controllers, middlewares, services, dan validasi",
     isDocument: false,
@@ -75,7 +81,8 @@ const works = [
     id: 7,
     title: "Literally Insight",
     category: "Mobile Development",
-    year: "2025",
+    year: "2025-07",
+    displayYear: "2025",
     image: null,
     description: "Aplikasi mobile cross-platform menggunakan Flutter dengan dukungan untuk Android, iOS, Web, Windows, macOS, dan Linux",
     isDocument: false,
@@ -86,7 +93,8 @@ const works = [
     id: 8,
     title: "Fraud Detection & Anomaly Identification",
     category: "Machine Learning",
-    year: "2025",
+    year: "2025-10",
+    displayYear: "2025",
     image: null,
     description: "Eksplorasi deteksi penipuan dan identifikasi anomali menggunakan teknik klasifikasi (Decision Tree, Random Forest) dan clustering dengan PCA untuk reduksi dimensi",
     isDocument: false,
@@ -95,8 +103,8 @@ const works = [
   },
 ];
 
-// Sort works by year (newest first) and take only 5 for display
-const sortedWorks = [...works].sort((a, b) => parseInt(b.year) - parseInt(a.year));
+// Sort works by year-month (newest first) and take only 5 for display
+const sortedWorks = [...works].sort((a, b) => b.year.localeCompare(a.year));
 const displayedWorks = sortedWorks.slice(0, 5);
 
 interface WorkCardProps {
@@ -170,7 +178,7 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
                 {work.category}
               </span>
               <span className="inline-block px-3 py-1 bg-white/20 text-primary-foreground text-xs rounded-full">
-                {work.year}
+                {work.displayYear}
               </span>
             </div>
             <h3 className="text-2xl font-serif text-primary-foreground mb-2">

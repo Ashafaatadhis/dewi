@@ -10,6 +10,7 @@ const works = [
     id: 1,
     title: "Laporan PKL - Web Proxy",
     category: "Networking",
+    year: "2024",
     image: work6,
     description: "Memblokir Ekstensi File JPG dan PNG Menggunakan Web Proxy",
     isDocument: true,
@@ -19,6 +20,7 @@ const works = [
     id: 2,
     title: "WeMAIL",
     category: "Web Development",
+    year: "2024",
     image: workWemail,
     description: "Aplikasi pembuatan surat berbasis web dengan fitur manajemen template dan dashboard analytics",
     isDocument: false,
@@ -28,6 +30,7 @@ const works = [
     id: 3,
     title: "Aplikasi Kasir Toko Ikan",
     category: "Web Development",
+    year: "2024",
     image: workKasirIkan,
     description: "Penerapan Sistem Informasi Aplikasi Kasir Berbasis Web Untuk Toko Ikan",
     isDocument: false,
@@ -99,9 +102,14 @@ const WorksSection = () => {
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    <span className="inline-block px-3 py-1 bg-primary/80 text-primary-foreground text-xs rounded-full mb-3">
-                      {work.category}
-                    </span>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="inline-block px-3 py-1 bg-primary/80 text-primary-foreground text-xs rounded-full">
+                        {work.category}
+                      </span>
+                      <span className="inline-block px-3 py-1 bg-white/20 text-primary-foreground text-xs rounded-full">
+                        {work.year}
+                      </span>
+                    </div>
                     <h3 className="text-2xl font-serif text-primary-foreground mb-2">
                       {work.title}
                     </h3>

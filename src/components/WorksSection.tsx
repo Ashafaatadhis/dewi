@@ -125,6 +125,30 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/Klasifikasi-Gambar-CIFAR10-dengan-CNN-TensorFlow",
   },
+  {
+    id: 11,
+    title: "Customer Segmentation K-Means",
+    category: "Machine Learning",
+    year: "2025-12",
+    displayYear: "2025",
+    image: null,
+    description: "Segmentasi pelanggan mall menggunakan K-Means Clustering berdasarkan perilaku belanja dan pendapatan tahunan dengan teknik visualisasi data",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/Customer-Segmentation-with-K-Means-Clustering-on-Mall-Customers-Dataset",
+  },
+  {
+    id: 12,
+    title: "Workflow CI/CD",
+    category: "DevOps",
+    year: "2025-12",
+    displayYear: "2025",
+    image: null,
+    description: "Implementasi Continuous Integration dengan GitHub Actions untuk proyek Machine Learning menggunakan Python",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/Workflow-CI",
+  },
 ];
 
 // Sort works by year-month (newest first) and take only 5 for display

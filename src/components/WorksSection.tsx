@@ -20,7 +20,7 @@ const works = [
     id: 2,
     title: "WeMAIL",
     category: "Web Development",
-    year: "2024",
+    year: "2025",
     image: workWemail,
     description: "Aplikasi pembuatan surat berbasis web dengan fitur manajemen template dan dashboard analytics",
     isDocument: false,

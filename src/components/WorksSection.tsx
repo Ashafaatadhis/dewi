@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import work6 from "@/assets/work-6.png";
 import workWemail from "@/assets/work-wemail.png";
 import workKasirIkan from "@/assets/work-kasir-ikan.png";
+import workScientificPoster from "@/assets/work-scientific-poster.png";
 import LaptopMockup from "./LaptopMockup";
 import DocumentMockup from "./DocumentMockup";
 
@@ -35,6 +36,16 @@ const works = [
     description: "Penerapan Sistem Informasi Aplikasi Kasir Berbasis Web Untuk Toko Ikan",
     isDocument: false,
     isLaptop: true,
+  },
+  {
+    id: 4,
+    title: "Supermarket Sales Dashboard Analysis",
+    category: "Data Analysis",
+    year: "2023",
+    image: workScientificPoster,
+    description: "Poster ilmiah analisis dashboard penjualan supermarket menggunakan Microsoft Excel dan Power BI untuk visualisasi data dan insight bisnis",
+    isDocument: true,
+    isLaptop: false,
   },
 ];
 

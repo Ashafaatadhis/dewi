@@ -101,6 +101,18 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/Eksplorasi-deteksi-penipuan-fraud-detection-dan-identifikasi-anomali",
   },
+  {
+    id: 9,
+    title: "Sentiment Analysis TikTok Reviews",
+    category: "Deep Learning",
+    year: "2025-12",
+    displayYear: "2025",
+    image: null,
+    description: "Analisis sentimen ulasan aplikasi TikTok menggunakan Machine Learning (SVM, Random Forest) dan Deep Learning (LSTM) dengan teknik embedding BERT, Word2Vec, dan TF-IDF. Model terbaik mencapai akurasi 93%",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/sentiment-analysis-tiktok-reviews",
+  },
 ];
 
 // Sort works by year-month (newest first) and take only 5 for display

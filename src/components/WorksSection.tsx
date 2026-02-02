@@ -58,6 +58,17 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/UAS-DATAMINING-SISTEMPAKAR",
   },
+  {
+    id: 6,
+    title: "API Books",
+    category: "Backend Development",
+    year: "2025",
+    image: null,
+    description: "RESTful API untuk manajemen buku menggunakan TypeScript, Express, dan Prisma ORM dengan fitur controllers, middlewares, services, dan validasi",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/api_books",
+  },
 ];
 
 const WorksSection = () => {

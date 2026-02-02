@@ -41,7 +41,7 @@ const works = [
     id: 4,
     title: "Supermarket Sales Dashboard Analysis",
     category: "Data Analysis",
-    year: "2023",
+    year: "2025",
     image: workScientificPoster,
     description: "Poster ilmiah analisis dashboard penjualan supermarket menggunakan Microsoft Excel dan Power BI untuk visualisasi data dan insight bisnis",
     isDocument: true,

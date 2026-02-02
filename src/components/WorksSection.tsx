@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import work6 from "@/assets/work-6.png";
 import workWemail from "@/assets/work-wemail.png";
+import workKasirIkan from "@/assets/work-kasir-ikan.png";
 import LaptopMockup from "./LaptopMockup";
 import DocumentMockup from "./DocumentMockup";
 
@@ -20,6 +21,15 @@ const works = [
     category: "Web Development",
     image: workWemail,
     description: "Aplikasi pembuatan surat berbasis web dengan fitur manajemen template dan dashboard analytics",
+    isDocument: false,
+    isLaptop: true,
+  },
+  {
+    id: 3,
+    title: "Aplikasi Kasir Toko Ikan",
+    category: "Web Development",
+    image: workKasirIkan,
+    description: "Penerapan Sistem Informasi Aplikasi Kasir Berbasis Web Untuk Toko Ikan",
     isDocument: false,
     isLaptop: true,
   },

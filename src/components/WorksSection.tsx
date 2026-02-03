@@ -23,7 +23,7 @@ const works = [
     image: workIntervox,
     description: "Capstone Project Dicoding Asah. Intervox blends multimodal AI to read intonation, tempo, and gestures in one dashboard. Pick a question, upload a video, then receive the JSON response and visual grade in seconds.",
     isDocument: false,
-    isLaptop: false,
+    isLaptop: true,
     projectLink: "https://capstone-frontend-taupe.vercel.app/",
   },
   {
@@ -225,7 +225,7 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
     className={`group relative ${useRowSpan && index % 3 === 0 ? 'md:row-span-2' : ''}`}
   >
     <div className="relative overflow-hidden rounded-3xl shadow-elevated">
-      <div className={`${work.isLaptop || work.isDocument || work.isMobile ? (useRowSpan && index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]') : 'aspect-video'} overflow-hidden bg-gradient-to-br from-muted/30 via-background to-muted/20 flex items-center justify-center p-6`}>
+      <div className={`${useRowSpan && index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden bg-gradient-to-br from-muted/30 via-background to-muted/20 flex items-center justify-center p-6`}>
         {work.isMobile && work.mobileImages ? (
           <PhoneTripleMockup 
             images={work.mobileImages}

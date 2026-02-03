@@ -21,7 +21,7 @@ const works = [
     year: "2025-12",
     displayYear: "2025",
     image: workIntervox,
-    description: "Capstone Project Dicoding Asah. Intervox blends multimodal AI to read intonation, tempo, and gestures in one dashboard. Pick a question, upload a video, then receive the JSON response and visual grade in seconds.",
+    description: "Capstone Project di Program Asah led by Dicoding in association with Accenture. Intervox blends multimodal AI to read intonation, tempo, and gestures in one dashboard. Pick a question, upload a video, then receive the JSON response and visual grade in seconds.",
     isDocument: false,
     isLaptop: true,
     projectLink: "https://capstone-frontend-taupe.vercel.app/",

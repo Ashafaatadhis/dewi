@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { certificates } from "@/data/certificates";
 
 const AboutSection = () => {
+  const certificateCount = certificates.length;
   const skills = [
     { name: "Data Analysis", level: 90 },
     { name: "Python", level: 85 },
@@ -57,7 +59,7 @@ const AboutSection = () => {
                     whileHover={{ scale: 1.05 }}
                     className="gradient-glass rounded-2xl p-6 text-center border border-white/20 flex flex-col items-center justify-center"
                   >
-                    <span className="block text-4xl font-serif text-primary mb-1">5+</span>
+                    <span className="block text-4xl font-serif text-primary mb-1">{certificateCount}+</span>
                     <span className="text-sm text-muted-foreground">Sertifikat</span>
                   </motion.div>
                 </div>

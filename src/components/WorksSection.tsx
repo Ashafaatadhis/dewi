@@ -215,7 +215,9 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
       <div className={`${useRowSpan && index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden bg-gradient-to-br from-muted/30 via-background to-muted/20 flex items-center justify-center p-6`}>
         {work.isMobile && work.mobileImages ? (
           <PhoneTripleMockup 
-            images={work.mobileImages} 
+            images={work.mobileImages}
+            title={work.title}
+            description={work.description}
             className="w-full h-full transition-transform duration-700 group-hover:scale-105" 
           />
         ) : work.isLaptop && work.image ? (

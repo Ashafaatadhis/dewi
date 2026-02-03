@@ -4,33 +4,37 @@ import { Award, Star, Medal, Trophy } from "lucide-react";
 const certificates = [
   {
     id: 1,
-    title: "Google Data Analytics",
-    issuer: "Google",
-    year: "2024",
+    title: "Dasar Pemrograman Pengembang Software",
+    issuer: "Dicoding Indonesia",
+    year: "2025",
+    description: "Kelas pemrograman dasar mengacu standar okupasi Pengembang Software (KBJI: 2512.03). Mempelajari HTML, CSS, JavaScript, diagram alur, dan dokumentasi teknis aplikasi.",
     icon: Award,
     color: "from-rose-blush to-primary",
   },
   {
     id: 2,
-    title: "Python for Data Science",
-    issuer: "IBM",
+    title: "Google Data Analytics",
+    issuer: "Google",
     year: "2024",
+    description: "Sertifikasi profesional analisis data dari Google.",
     icon: Star,
     color: "from-primary to-nude-400",
   },
   {
     id: 3,
-    title: "SQL for Data Analysis",
-    issuer: "Coursera",
-    year: "2023",
+    title: "Python for Data Science",
+    issuer: "IBM",
+    year: "2024",
+    description: "Kursus Python untuk ilmu data dari IBM.",
     icon: Trophy,
     color: "from-nude-400 to-accent",
   },
   {
     id: 4,
-    title: "Web Development",
-    issuer: "freeCodeCamp",
+    title: "SQL for Data Analysis",
+    issuer: "Coursera",
     year: "2023",
+    description: "Kursus SQL untuk analisis data.",
     icon: Medal,
     color: "from-accent to-rose-blush",
   },
@@ -79,8 +83,11 @@ const CertificatesSection = () => {
                 <h3 className="text-lg font-serif text-foreground mb-2 group-hover:text-primary transition-colors">
                   {cert.title}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-3">
+                <p className="text-muted-foreground text-sm mb-2">
                   {cert.issuer}
+                </p>
+                <p className="text-muted-foreground/80 text-xs mb-3 line-clamp-2">
+                  {cert.description}
                 </p>
                 
                 {/* Year badge */}

@@ -88,6 +88,17 @@ const CertificatesSection = () => {
                   <cert.icon className="w-7 h-7 text-primary-foreground" />
                 </div>
 
+                {/* Certificate Image Thumbnail */}
+                {cert.image && (
+                  <div className="mb-4 rounded-xl overflow-hidden border border-border/30 shadow-soft">
+                    <img 
+                      src={cert.image} 
+                      alt={cert.title}
+                      className="w-full h-24 object-cover object-top"
+                    />
+                  </div>
+                )}
+
                 {/* Content */}
                 <h3 className="text-lg font-serif text-foreground mb-2 group-hover:text-primary transition-colors">
                   {cert.title}

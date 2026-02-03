@@ -82,15 +82,16 @@ const AboutSection = () => {
               <span className="italic text-primary">Insight</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Saya Dewi, mahasiswa Teknik Informatika semester 5 yang fokus mendalami 
-              Machine Learning dan pengembangan aplikasi. Bagi saya, memahami data sama 
-              menariknya dengan membangun produk digital yang bisa langsung digunakan.
+              Mahasiswa Teknik Informatika semester 5 dengan spesialisasi di bidang 
+              Machine Learning, Data Analysis, dan Software Development. Memiliki pengalaman 
+              dalam membangun model prediktif, analisis sentimen, serta pengembangan 
+              aplikasi web dan mobile.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Dari mengikuti program pelatihan hingga mengerjakan berbagai project, 
-              saya terus belajar dan bereksperimen dengan teknologi baru. Sertifikasi 
-              yang saya raih dan karya yang saya buat adalah bukti perjalanan belajar 
-              yang masih terus berlanjut.
+              Aktif mengikuti program pelatihan profesional dan telah memperoleh berbagai 
+              sertifikasi di bidang AI, Python, dan MLOps. Berkomitmen untuk terus 
+              mengembangkan keahlian teknis melalui pembelajaran berkelanjutan dan 
+              implementasi project nyata.
             </p>
 
             {/* Skills */}

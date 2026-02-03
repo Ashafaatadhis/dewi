@@ -43,7 +43,7 @@ const AboutSection = () => {
                     whileHover={{ scale: 1.05 }}
                     className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
                   >
-                    <span className="block text-4xl font-serif text-primary mb-1">Sem 6</span>
+                    <span className="block text-4xl font-serif text-primary mb-1">Sem 5</span>
                     <span className="text-sm text-muted-foreground">Semester</span>
                   </motion.div>
                   <motion.div

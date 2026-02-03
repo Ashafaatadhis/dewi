@@ -21,7 +21,7 @@ const LaptopMockup = ({ children, className = "" }: LaptopMockupProps) => {
             
             {/* Screen */}
             <div className="relative bg-black rounded-sm overflow-hidden">
-              <div className="aspect-[16/10]">
+              <div className="aspect-video">
                 {children}
               </div>
               

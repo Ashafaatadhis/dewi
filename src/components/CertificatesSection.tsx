@@ -133,7 +133,7 @@ const CertificatesSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {displayedCertificates.map((cert, index) => (
             <motion.div
               key={cert.id}
@@ -192,35 +192,35 @@ const CertificatesSection = () => {
               </div>
             </motion.div>
           ))}
-
-          {/* Show more certificates card - matching the certificate card style */}
-          <motion.div
-            initial={{ opacity: 0, y: 30, scale: 0.95 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -8 }}
-            className="group"
-            onClick={() => setShowAllCerts(true)}
-          >
-            <div className="relative gradient-card rounded-3xl p-6 shadow-soft border border-border/50 hover:shadow-elevated transition-all duration-500 h-full cursor-pointer flex flex-col items-center justify-center min-h-[280px]">
-              {/* Count */}
-              <span className="text-5xl md:text-6xl font-serif text-primary mb-2 group-hover:scale-110 transition-transform duration-300">
-                {remainingCount}+
-              </span>
-              
-              {/* Label */}
-              <p className="text-muted-foreground text-base">
-                Sertifikat
-              </p>
-
-              {/* Decorative corner */}
-              <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-tr-3xl">
-                <div className="absolute -top-8 -right-8 w-16 h-16 bg-gradient-to-br from-primary to-accent rotate-45 opacity-10 group-hover:opacity-20 transition-opacity" />
-              </div>
-            </div>
-          </motion.div>
         </div>
+
+        {/* Show more certificates button - pill style */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-16 text-center"
+        >
+          <button
+            onClick={() => setShowAllCerts(true)}
+            className="inline-flex items-center gap-4 gradient-glass rounded-full px-8 py-4 border border-border/50 shadow-soft hover:shadow-elevated hover:scale-105 transition-all duration-300 cursor-pointer group"
+          >
+            <div className="flex -space-x-2">
+              {certificates.slice(4, 8).map((cert) => (
+                <div
+                  key={cert.id}
+                  className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center group-hover:scale-110 transition-transform"
+                >
+                  <cert.icon className="w-4 h-4 text-primary-foreground" />
+                </div>
+              ))}
+            </div>
+            <span className="text-muted-foreground">
+              dan <span className="text-foreground font-medium">{remainingCount}+ sertifikasi</span> lainnya
+            </span>
+          </button>
+        </motion.div>
       </div>
 
       {/* Single Certificate Modal */}

@@ -27,10 +27,10 @@ const AboutSection = () => {
           >
             <div className="relative">
               {/* Main decorative card */}
-              <div className="w-full aspect-square max-w-md mx-auto gradient-card rounded-3xl shadow-elevated p-8 relative overflow-hidden">
-                {/* Decorative circles - hidden on mobile for cleaner look */}
-                <div className="hidden md:block absolute top-8 right-8 w-20 h-20 bg-primary/20 rounded-full" />
-                <div className="hidden md:block absolute bottom-16 left-8 w-32 h-32 bg-accent/30 organic-border" />
+              <div className="w-full aspect-square max-w-md mx-auto gradient-card rounded-3xl shadow-elevated p-4 sm:p-6 md:p-8 relative overflow-hidden">
+                {/* Decorative circles - responsive sizing for consistency */}
+                <div className="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 bg-primary/20 rounded-full" />
+                <div className="absolute bottom-8 left-4 sm:bottom-12 sm:left-6 md:bottom-16 md:left-8 w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-accent/30 organic-border" />
                 
                 {/* Stats grid */}
                 <div className="grid grid-cols-2 gap-4 h-full items-center relative z-10">

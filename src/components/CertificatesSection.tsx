@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Award, X, Lightbulb, GitBranch, Bot, Code, Brain, Cpu, Wallet } from "lucide-react";
+import { Award, X, Lightbulb, GitBranch, Bot, Code, Brain, Cpu, Wallet, Cog } from "lucide-react";
 import certDicodingPemrograman from "@/assets/cert-dicoding-pemrograman.jpg";
 import certDicodingLogic from "@/assets/cert-dicoding-logic.jpg";
 import certDicodingGit from "@/assets/cert-dicoding-git.jpg";
@@ -9,86 +9,97 @@ import certDicodingPython from "@/assets/cert-dicoding-python.jpg";
 import certDicodingML from "@/assets/cert-dicoding-ml.jpg";
 import certDicodingDeepLearning from "@/assets/cert-dicoding-deeplearning.jpg";
 import certDicodingFinlit from "@/assets/cert-dicoding-finlit.jpg";
+import certDicodingMLOps from "@/assets/cert-dicoding-mlops.jpg";
 
 const certificates = [
   {
     id: 1,
+    title: "Membangun Sistem Machine Learning",
+    issuer: "Dicoding Indonesia",
+    year: "Desember 2025",
+    description: "Mempelajari MLOps, pipeline ML, model serving, monitoring, dan deployment dengan MLflow, GitHub, dan Docker.",
+    icon: Cog,
+    color: "from-rose-blush to-primary",
+    image: certDicodingMLOps,
+  },
+  {
+    id: 2,
     title: "Introduction to Financial Literacy",
     issuer: "Dicoding Indonesia",
     year: "Januari 2026",
     description: "Mempelajari pengelolaan keuangan, investasi, dan strategi pinjaman cerdas.",
     icon: Wallet,
-    color: "from-rose-blush to-primary",
+    color: "from-primary to-nude-400",
     image: certDicodingFinlit,
   },
   {
-    id: 2,
+    id: 4,
     title: "Belajar Fundamental Deep Learning",
     issuer: "Dicoding Indonesia",
     year: "Oktober 2025",
     description: "Mempelajari neural network, NLP, image classification, dan generative AI.",
     icon: Cpu,
-    color: "from-primary to-nude-400",
+    color: "from-nude-400 to-accent",
     image: certDicodingDeepLearning,
   },
   {
-    id: 3,
+    id: 5,
     title: "Belajar Machine Learning untuk Pemula",
     issuer: "Dicoding Indonesia",
     year: "Oktober 2025",
     description: "Mempelajari klasifikasi, regresi, clustering, dan hyperparameter tuning.",
     icon: Brain,
-    color: "from-nude-400 to-accent",
+    color: "from-accent to-rose-blush",
     image: certDicodingML,
   },
   {
-    id: 4,
+    id: 6,
     title: "Memulai Pemrograman dengan Python",
     issuer: "Dicoding Indonesia",
     year: "September 2025",
     description: "Mempelajari dasar Python, OOP, unit testing, dan library populer.",
     icon: Code,
-    color: "from-accent to-rose-blush",
+    color: "from-rose-blush to-primary",
     image: certDicodingPython,
   },
   {
-    id: 5,
+    id: 7,
     title: "Dasar Pemrograman Pengembang Software",
     issuer: "Dicoding Indonesia",
     year: "September 2025",
     description: "Mempelajari dasar HTML, CSS, JavaScript, dan dokumentasi teknis aplikasi.",
     icon: Award,
-    color: "from-rose-blush to-primary",
+    color: "from-primary to-nude-400",
     image: certDicodingPemrograman,
   },
   {
-    id: 6,
+    id: 8,
     title: "Belajar Dasar AI",
     issuer: "Dicoding Indonesia",
     year: "September 2025",
     description: "Mempelajari konsep AI, Machine Learning, dan Deep Learning.",
     icon: Bot,
-    color: "from-primary to-nude-400",
+    color: "from-nude-400 to-accent",
     image: certDicodingAI,
   },
   {
-    id: 7,
+    id: 9,
     title: "Belajar Dasar Git dengan GitHub",
     issuer: "Dicoding Indonesia",
     year: "Agustus 2025",
     description: "Mempelajari pengelolaan kode dengan Git, branching, dan kolaborasi tim di GitHub.",
     icon: GitBranch,
-    color: "from-nude-400 to-accent",
+    color: "from-accent to-rose-blush",
     image: certDicodingGit,
   },
   {
-    id: 8,
+    id: 10,
     title: "Logika Pemrograman (Programming Logic 101)",
     issuer: "Dicoding Indonesia",
     year: "Agustus 2025",
     description: "Mempelajari logika pemrograman dasar, gerbang logika, dan computational thinking.",
     icon: Lightbulb,
-    color: "from-accent to-rose-blush",
+    color: "from-rose-blush to-primary",
     image: certDicodingLogic,
   },
 ];

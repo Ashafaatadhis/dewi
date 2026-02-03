@@ -82,7 +82,7 @@ const AboutSection = () => {
               <span className="italic text-primary">Insight</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Mahasiswa Teknik Informatika semester 5 dengan ketertarikan kuat di bidang 
+              Mahasiswa Teknik Informatika semester 5 dengan ketertarikan di bidang 
               Machine Learning, Data Analysis, dan Software Development. Saya percaya bahwa 
               teknologi terbaik lahir dari kombinasi pemahaman data yang mendalam dengan 
               kemampuan engineering yang solid.

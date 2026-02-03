@@ -207,7 +207,7 @@ const CertificatesSection = () => {
             className="inline-flex items-center gap-4 gradient-glass rounded-full px-8 py-4 border border-border/50 shadow-soft hover:shadow-elevated hover:scale-105 transition-all duration-300 cursor-pointer group"
           >
             <div className="flex -space-x-2">
-              {certificates.slice(4, 8).map((cert) => (
+              {certificates.slice(4, Math.min(8, certificates.length)).map((cert) => (
                 <div
                   key={cert.id}
                   className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent border-2 border-background flex items-center justify-center group-hover:scale-110 transition-transform"

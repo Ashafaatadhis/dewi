@@ -34,28 +34,28 @@ const AboutSection = () => {
                 <div className="grid grid-cols-2 gap-4 h-full items-center relative z-10">
                   <motion.div
                     whileHover={{ scale: 1.05 }}
-                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
+                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20 flex flex-col items-center justify-center"
                   >
                     <span className="block text-4xl font-serif text-primary mb-1">10+</span>
                     <span className="text-sm text-muted-foreground">Projects</span>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
-                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
+                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20 flex flex-col items-center justify-center"
                   >
                     <span className="block text-4xl font-serif text-primary mb-1">Sem 5</span>
                     <span className="text-sm text-muted-foreground">Semester</span>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
-                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
+                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20 flex flex-col items-center justify-center"
                   >
                     <span className="block text-4xl font-serif text-primary mb-1">3.66</span>
                     <span className="text-sm text-muted-foreground">IPK</span>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
-                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20"
+                    className="gradient-glass rounded-2xl p-6 text-center border border-white/20 flex flex-col items-center justify-center"
                   >
                     <span className="block text-4xl font-serif text-primary mb-1">5+</span>
                     <span className="text-sm text-muted-foreground">Sertifikat</span>

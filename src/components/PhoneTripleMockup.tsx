@@ -20,12 +20,18 @@ const PhoneFrame = ({ image, alt }: { image: string; alt: string }) => {
             </div>
             
             {/* Screen content */}
-            <div className="relative aspect-[9/19] overflow-hidden">
-              <img
-                src={image}
-                alt={alt}
-                className="w-full h-full object-cover"
-              />
+            <div className="relative aspect-[9/19] overflow-hidden bg-black">
+              {/*
+                Reserve safe areas so the top island + bottom indicator don't cover the UI screenshot,
+                and use object-contain so the full app screen is visible (no cropping).
+              */}
+              <div className="absolute inset-0 pt-7 pb-6 px-1">
+                <img
+                  src={image}
+                  alt={alt}
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
             
             {/* Home indicator */}

@@ -1,4 +1,4 @@
-import { Award, Lightbulb, GitBranch, Bot, Code, Brain, Cpu, Wallet, Cog, GraduationCap } from "lucide-react";
+import { Award, Lightbulb, GitBranch, Bot, Code, Brain, Cpu, Wallet, Cog, GraduationCap, FileCheck } from "lucide-react";
 import certDicodingPemrograman from "@/assets/cert-dicoding-pemrograman.jpg";
 import certDicodingLogic from "@/assets/cert-dicoding-logic.jpg";
 import certDicodingGit from "@/assets/cert-dicoding-git.jpg";
@@ -9,6 +9,7 @@ import certDicodingDeepLearning from "@/assets/cert-dicoding-deeplearning.jpg";
 import certDicodingFinlit from "@/assets/cert-dicoding-finlit.jpg";
 import certDicodingMLOps from "@/assets/cert-dicoding-mlops.jpg";
 import certAsahML from "@/assets/cert-asah-ml.jpg";
+import certAsahKelulusan from "@/assets/cert-asah-kelulusan.jpg";
 import type { LucideIcon } from "lucide-react";
 
 export interface Certificate {
@@ -25,6 +26,16 @@ export interface Certificate {
 export const certificates: Certificate[] = [
   {
     id: 0,
+    title: "Surat Kelulusan Program Asah",
+    issuer: "Dicoding x Accenture",
+    year: "Januari 2026",
+    description: "Surat kelulusan resmi Program Asah led by Dicoding in association with Accenture untuk alur Machine Learning.",
+    icon: FileCheck,
+    color: "from-accent to-primary",
+    image: certAsahKelulusan,
+  },
+  {
+    id: 1,
     title: "Pelatihan Machine Learning - Asah 2025",
     issuer: "Dicoding x Accenture",
     year: "Januari 2026",

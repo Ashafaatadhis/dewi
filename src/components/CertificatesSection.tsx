@@ -10,6 +10,8 @@ const CertificatesSection = () => {
   // Sort certificates by date (newest first) and show only 4 on main view
   const displayedCertificates = certificates.slice(0, 4);
   const remainingCount = certificates.length - 4;
+  
+  console.log("Total certificates:", certificates.length, "Remaining:", remainingCount);
 
   return (
     <section id="certificates" className="py-24 relative overflow-hidden">

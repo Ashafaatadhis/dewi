@@ -90,11 +90,11 @@ const CertificatesSection = () => {
 
                 {/* Certificate Image Thumbnail */}
                 {cert.image && (
-                  <div className="mb-4 rounded-xl overflow-hidden border border-border/30 shadow-soft">
+                  <div className="mb-4 rounded-xl overflow-hidden border border-border/30 shadow-soft bg-white">
                     <img 
                       src={cert.image} 
                       alt={cert.title}
-                      className="w-full h-24 object-cover object-top"
+                      className="w-full h-auto"
                     />
                   </div>
                 )}

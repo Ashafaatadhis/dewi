@@ -1,5 +1,7 @@
-import { motion } from "framer-motion";
-import { Award, Star, Medal, Trophy } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Award, Star, Medal, Trophy, X } from "lucide-react";
+import certDicodingPemrograman from "@/assets/cert-dicoding-pemrograman.jpg";
 
 const certificates = [
   {
@@ -10,6 +12,7 @@ const certificates = [
     description: "Mempelajari dasar HTML, CSS, JavaScript, dan dokumentasi teknis aplikasi.",
     icon: Award,
     color: "from-rose-blush to-primary",
+    image: certDicodingPemrograman,
   },
   {
     id: 2,
@@ -19,6 +22,7 @@ const certificates = [
     description: "Sertifikasi profesional analisis data dari Google.",
     icon: Star,
     color: "from-primary to-nude-400",
+    image: null,
   },
   {
     id: 3,
@@ -28,6 +32,7 @@ const certificates = [
     description: "Kursus Python untuk ilmu data dari IBM.",
     icon: Trophy,
     color: "from-nude-400 to-accent",
+    image: null,
   },
   {
     id: 4,
@@ -37,10 +42,13 @@ const certificates = [
     description: "Kursus SQL untuk analisis data.",
     icon: Medal,
     color: "from-accent to-rose-blush",
+    image: null,
   },
 ];
 
 const CertificatesSection = () => {
+  const [selectedCert, setSelectedCert] = useState<typeof certificates[0] | null>(null);
+
   return (
     <section id="certificates" className="py-24 relative overflow-hidden">
       {/* Background decoration */}
@@ -72,8 +80,9 @@ const CertificatesSection = () => {
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
               className="group"
+              onClick={() => cert.image && setSelectedCert(cert)}
             >
-              <div className="relative gradient-card rounded-3xl p-6 shadow-soft border border-border/50 hover:shadow-elevated transition-all duration-500 h-full">
+              <div className={`relative gradient-card rounded-3xl p-6 shadow-soft border border-border/50 hover:shadow-elevated transition-all duration-500 h-full ${cert.image ? 'cursor-pointer' : ''}`}>
                 {/* Icon */}
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${cert.color} flex items-center justify-center mb-5 shadow-soft group-hover:scale-110 transition-transform duration-300`}>
                   <cert.icon className="w-7 h-7 text-primary-foreground" />
@@ -94,6 +103,13 @@ const CertificatesSection = () => {
                 <span className="inline-block px-3 py-1 bg-secondary text-muted-foreground text-xs rounded-full">
                   {cert.year}
                 </span>
+
+                {/* Click indicator for certificates with images */}
+                {cert.image && (
+                  <div className="absolute bottom-4 right-4 text-xs text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    Klik untuk lihat
+                  </div>
+                )}
 
                 {/* Decorative corner */}
                 <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden rounded-tr-3xl">
@@ -131,6 +147,51 @@ const CertificatesSection = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Certificate Modal */}
+      <AnimatePresence>
+        {selectedCert && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedCert(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", damping: 25 }}
+              className="relative max-w-4xl w-full bg-background rounded-2xl overflow-hidden shadow-elevated"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Header */}
+              <div className="flex items-center justify-between p-4 border-b border-border">
+                <div>
+                  <h3 className="text-lg font-serif text-foreground">{selectedCert.title}</h3>
+                  <p className="text-sm text-muted-foreground">{selectedCert.issuer} • {selectedCert.year}</p>
+                </div>
+                <button
+                  onClick={() => setSelectedCert(null)}
+                  className="p-2 rounded-full hover:bg-secondary transition-colors"
+                >
+                  <X className="w-5 h-5 text-muted-foreground" />
+                </button>
+              </div>
+              
+              {/* Certificate Image */}
+              <div className="p-4 bg-secondary/30">
+                <img
+                  src={selectedCert.image || ""}
+                  alt={selectedCert.title}
+                  className="w-full h-auto rounded-lg shadow-soft"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

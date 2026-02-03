@@ -5,8 +5,10 @@ import work6 from "@/assets/work-6.png";
 import workWemail from "@/assets/work-wemail.png";
 import workKasirIkan from "@/assets/work-kasir-ikan.png";
 import workScientificPoster from "@/assets/work-scientific-poster.png";
+import workWisataBandung from "@/assets/work-wisata-bandung.png";
 import LaptopMockup from "./LaptopMockup";
 import DocumentMockup from "./DocumentMockup";
+import PhoneMockup from "./PhoneMockup";
 
 const works = [
   {
@@ -171,7 +173,20 @@ const works = [
     description: "Dokumentasi API untuk platform Bangun Hub menggunakan format OpenAPI/Swagger untuk memudahkan integrasi dan pengembangan",
     isDocument: false,
     isLaptop: false,
+    isMobile: false,
     githubLink: "https://github.com/Dewiwati/bangun-hub-api-docs",
+  },
+  {
+    id: 15,
+    title: "Wisata Bandung",
+    category: "Mobile Development",
+    year: "2025-12",
+    displayYear: "2025",
+    image: workWisataBandung,
+    description: "Aplikasi mobile Android untuk eksplorasi destinasi wisata di Bandung dengan fitur galeri foto, informasi lokasi, jam operasional, dan harga tiket",
+    isDocument: false,
+    isLaptop: false,
+    isMobile: true,
   },
 ];
 
@@ -195,7 +210,15 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
   >
     <div className="relative overflow-hidden rounded-3xl shadow-elevated">
       <div className={`${useRowSpan && index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden bg-gradient-to-br from-muted/30 via-background to-muted/20 flex items-center justify-center p-6`}>
-        {work.isLaptop && work.image ? (
+        {work.isMobile && work.image ? (
+          <PhoneMockup className="h-full max-h-[95%] transition-transform duration-700 group-hover:scale-105">
+            <img
+              src={work.image}
+              alt={work.title}
+              className="w-full h-full object-cover"
+            />
+          </PhoneMockup>
+        ) : work.isLaptop && work.image ? (
           <LaptopMockup className="w-full max-w-[90%] transition-transform duration-700 group-hover:scale-105">
             <img
               src={work.image}

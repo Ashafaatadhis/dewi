@@ -67,8 +67,8 @@ const works = [
     displayYear: "2025",
     image: workScientificPoster,
     description: "Poster ilmiah analisis dashboard penjualan supermarket menggunakan Microsoft Excel dan Power BI untuk visualisasi data dan insight bisnis",
-    isDocument: true,
-    isLaptop: false,
+    isDocument: false,
+    isLaptop: true,
   },
   {
     id: 5,

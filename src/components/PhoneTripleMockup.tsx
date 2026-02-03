@@ -51,14 +51,14 @@ const PhoneTripleMockup = ({ images, className = "" }: PhoneTripleMockupProps) =
   return (
     <div className={`relative flex items-center justify-center ${className}`}>
       {/* Three phones side by side */}
-      <div className="flex items-center justify-center gap-3">
-        <div className="transform scale-[0.55]">
+      <div className="flex items-center justify-center gap-4">
+        <div className="transform scale-[0.7]">
           <PhoneFrame image={images[0]} alt="Home screen" />
         </div>
-        <div className="transform scale-[0.55]">
+        <div className="transform scale-[0.7]">
           <PhoneFrame image={images[1]} alt="Detail screen" />
         </div>
-        <div className="transform scale-[0.55]">
+        <div className="transform scale-[0.7]">
           <PhoneFrame image={images[2]} alt="Profile screen" />
         </div>
       </div>

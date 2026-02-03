@@ -82,16 +82,15 @@ const AboutSection = () => {
               <span className="italic text-primary">Insight</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Saya adalah mahasiswa Teknik Informatika semester 5 dengan fokus di bidang 
-              Machine Learning dan Data Analysis. Telah menyelesaikan Program Asah led by 
-              Dicoding x Accenture dan membangun berbagai project AI seperti Sentiment Analysis, 
-              Fraud Detection, dan Image Classification dengan CNN.
+              Saya adalah mahasiswa Teknik Informatika semester 5 yang tertarik menggali 
+              pola tersembunyi di balik data. Bagi saya, setiap dataset menyimpan cerita 
+              yang menunggu untuk diungkap dan ditransformasi menjadi keputusan strategis.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Selain ML, saya juga aktif mengembangkan aplikasi web dan mobile seperti WeMAIL, 
-              Kasir Toko Ikan, dan Wisata Bandung. Dengan {certificateCount}+ sertifikasi dari Dicoding, 
-              saya terus mengasah kemampuan di Python, TensorFlow, dan MLOps untuk membangun 
-              solusi berbasis data yang berdampak.
+              Di luar dunia data, saya juga menikmati membangun aplikasi web dan mobile 
+              yang fungsional dan user-friendly. Kombinasi analytical thinking dengan 
+              kemampuan development memungkinkan saya menciptakan solusi end-to-end yang 
+              tidak hanya cerdas, tapi juga mudah diakses.
             </p>
 
             {/* Skills */}

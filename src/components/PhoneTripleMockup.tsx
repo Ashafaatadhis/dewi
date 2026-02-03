@@ -12,11 +12,9 @@ const PhoneFrame = ({ image, alt }: { image: string; alt: string }) => {
         <div className="relative rounded-[1.75rem] bg-black p-[2px]">
           {/* Screen area */}
           <div className="relative rounded-[1.6rem] bg-gray-900 overflow-hidden">
-            {/* Dynamic Island */}
-            <div className="absolute top-2 left-1/2 -translate-x-1/2 w-14 h-[6px] bg-black rounded-full z-20">
-              <div className="absolute right-2 top-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-gray-800 rounded-full">
-                <div className="absolute inset-0.5 bg-gradient-to-br from-gray-600 to-transparent rounded-full" />
-              </div>
+            {/* Dynamic Island - smaller */}
+            <div className="absolute top-1 left-1/2 -translate-x-1/2 w-10 h-[4px] bg-black rounded-full z-20">
+              <div className="absolute right-1.5 top-1/2 -translate-y-1/2 w-1 h-1 bg-gray-800 rounded-full" />
             </div>
             
             {/* Screen content */}

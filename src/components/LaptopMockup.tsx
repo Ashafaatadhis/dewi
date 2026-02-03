@@ -3,9 +3,15 @@ import { ReactNode } from "react";
 interface LaptopMockupProps {
   children: ReactNode;
   className?: string;
+  aspectRatio?: string;
 }
 
-const LaptopMockup = ({ children, className = "" }: LaptopMockupProps) => {
+const LaptopMockup = ({ children, className = "", aspectRatio = "video" }: LaptopMockupProps) => {
+  const aspectClass = aspectRatio === "video" ? "aspect-video" : 
+                      aspectRatio === "portrait" ? "aspect-[3/4]" :
+                      aspectRatio === "square" ? "aspect-square" :
+                      `aspect-[${aspectRatio}]`;
+
   return (
     <div className={`relative ${className}`}>
       {/* Laptop Screen */}
@@ -21,7 +27,7 @@ const LaptopMockup = ({ children, className = "" }: LaptopMockupProps) => {
             
             {/* Screen */}
             <div className="relative bg-black rounded-sm overflow-hidden">
-              <div className="aspect-video">
+              <div className={aspectClass}>
                 {children}
               </div>
               

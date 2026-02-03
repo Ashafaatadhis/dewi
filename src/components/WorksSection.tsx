@@ -69,6 +69,7 @@ const works = [
     description: "Poster ilmiah analisis dashboard penjualan supermarket menggunakan Microsoft Excel dan Power BI untuk visualisasi data dan insight bisnis",
     isDocument: false,
     isLaptop: true,
+    aspectRatio: "portrait",
   },
   {
     id: 5,
@@ -232,11 +233,14 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
             className="w-full h-full transition-transform duration-700 group-hover:scale-105" 
           />
         ) : work.isLaptop && work.image ? (
-          <LaptopMockup className="w-full max-w-[90%] transition-transform duration-700 group-hover:scale-105">
+          <LaptopMockup 
+            className="w-full max-w-[90%] transition-transform duration-700 group-hover:scale-105"
+            aspectRatio={work.aspectRatio}
+          >
             <img
               src={work.image}
               alt={work.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </LaptopMockup>
         ) : work.isDocument && work.image ? (

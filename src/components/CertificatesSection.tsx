@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Award, Star, Trophy, X, Lightbulb, GitBranch } from "lucide-react";
+import { Award, Star, X, Lightbulb, GitBranch, Bot } from "lucide-react";
 import certDicodingPemrograman from "@/assets/cert-dicoding-pemrograman.jpg";
 import certDicodingLogic from "@/assets/cert-dicoding-logic.jpg";
 import certDicodingGit from "@/assets/cert-dicoding-git.jpg";
+import certDicodingAI from "@/assets/cert-dicoding-ai.jpg";
 
 const certificates = [
   {
@@ -18,33 +19,33 @@ const certificates = [
   },
   {
     id: 2,
+    title: "Belajar Dasar AI",
+    issuer: "Dicoding Indonesia",
+    year: "September 2025",
+    description: "Mempelajari konsep AI, Machine Learning, dan Deep Learning.",
+    icon: Bot,
+    color: "from-primary to-nude-400",
+    image: certDicodingAI,
+  },
+  {
+    id: 3,
     title: "Belajar Dasar Git dengan GitHub",
     issuer: "Dicoding Indonesia",
     year: "Agustus 2025",
     description: "Mempelajari pengelolaan kode dengan Git, branching, dan kolaborasi tim di GitHub.",
     icon: GitBranch,
-    color: "from-primary to-nude-400",
+    color: "from-nude-400 to-accent",
     image: certDicodingGit,
   },
   {
-    id: 3,
+    id: 4,
     title: "Logika Pemrograman (Programming Logic 101)",
     issuer: "Dicoding Indonesia",
     year: "Agustus 2025",
     description: "Mempelajari logika pemrograman dasar, gerbang logika, dan computational thinking.",
     icon: Lightbulb,
-    color: "from-nude-400 to-accent",
-    image: certDicodingLogic,
-  },
-  {
-    id: 4,
-    title: "Google Data Analytics",
-    issuer: "Google",
-    year: "2024",
-    description: "Sertifikasi profesional analisis data dari Google.",
-    icon: Star,
     color: "from-accent to-rose-blush",
-    image: null,
+    image: certDicodingLogic,
   },
 ];
 

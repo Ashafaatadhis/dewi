@@ -240,13 +240,15 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
             />
           </LaptopMockup>
         ) : work.isDocument && work.image ? (
-          <DocumentMockup className="h-full max-h-[95%] transition-transform duration-700 group-hover:scale-105">
-            <img
-              src={work.image}
-              alt={work.title}
-              className="w-full h-full object-contain"
-            />
-          </DocumentMockup>
+          <div className="flex items-center justify-center w-full h-full">
+            <DocumentMockup className="h-full max-h-[90%] transition-transform duration-700 group-hover:scale-105">
+              <img
+                src={work.image}
+                alt={work.title}
+                className="w-full h-full object-contain"
+              />
+            </DocumentMockup>
+          </div>
         ) : work.image ? (
           <img
             src={work.image}

@@ -52,8 +52,8 @@ const CertificatesSection = () => {
                   <cert.icon className="w-7 h-7 text-primary-foreground" />
                 </div>
 
-                {/* Certificate Image Thumbnail */}
-                {cert.image && (
+                {/* Certificate Image Thumbnail - only show if not hidden */}
+                {cert.image && !cert.hidePreview && (
                   <div className="mb-4 rounded-xl overflow-hidden border border-border/30 shadow-soft bg-white">
                     <img 
                       src={cert.image} 

@@ -21,6 +21,7 @@ export interface Certificate {
   icon: LucideIcon;
   color: string;
   image: string;
+  hidePreview?: boolean;
 }
 
 export const certificates: Certificate[] = [
@@ -33,6 +34,7 @@ export const certificates: Certificate[] = [
     icon: FileCheck,
     color: "from-accent to-primary",
     image: certAsahKelulusan,
+    hidePreview: true,
   },
   {
     id: 1,

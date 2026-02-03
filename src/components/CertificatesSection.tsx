@@ -139,11 +139,11 @@ const CertificatesSection = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", damping: 25 }}
-              className="relative max-w-4xl w-full bg-background rounded-2xl overflow-hidden shadow-elevated"
+              className="relative max-w-4xl w-full max-h-[90vh] bg-background rounded-2xl overflow-hidden shadow-elevated flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
-              <div className="flex items-center justify-between p-4 border-b border-border">
+              <div className="flex items-center justify-between p-4 border-b border-border flex-shrink-0">
                 <div>
                   <h3 className="text-lg font-serif text-foreground">{selectedCert.title}</h3>
                   <p className="text-sm text-muted-foreground">{selectedCert.issuer} • {selectedCert.year}</p>
@@ -156,8 +156,8 @@ const CertificatesSection = () => {
                 </button>
               </div>
               
-              {/* Certificate Image */}
-              <div className="p-4 bg-secondary/30">
+              {/* Certificate Image - scrollable to show full content */}
+              <div className="p-4 bg-secondary/30 overflow-y-auto flex-1">
                 <img
                   src={selectedCert.image || ""}
                   alt={selectedCert.title}

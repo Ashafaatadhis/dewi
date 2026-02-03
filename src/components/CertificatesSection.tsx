@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Award, Star, Medal, Trophy, X } from "lucide-react";
+import { Award, Star, Medal, Trophy, X, Lightbulb } from "lucide-react";
 import certDicodingPemrograman from "@/assets/cert-dicoding-pemrograman.jpg";
+import certDicodingLogic from "@/assets/cert-dicoding-logic.jpg";
 
 const certificates = [
   {
@@ -16,31 +17,31 @@ const certificates = [
   },
   {
     id: 2,
+    title: "Logika Pemrograman (Programming Logic 101)",
+    issuer: "Dicoding Indonesia",
+    year: "Agustus 2025",
+    description: "Mempelajari logika pemrograman dasar, gerbang logika, dan computational thinking.",
+    icon: Lightbulb,
+    color: "from-primary to-nude-400",
+    image: certDicodingLogic,
+  },
+  {
+    id: 3,
     title: "Google Data Analytics",
     issuer: "Google",
     year: "2024",
     description: "Sertifikasi profesional analisis data dari Google.",
     icon: Star,
-    color: "from-primary to-nude-400",
-    image: null,
-  },
-  {
-    id: 3,
-    title: "Python for Data Science",
-    issuer: "IBM",
-    year: "2024",
-    description: "Kursus Python untuk ilmu data dari IBM.",
-    icon: Trophy,
     color: "from-nude-400 to-accent",
     image: null,
   },
   {
     id: 4,
-    title: "SQL for Data Analysis",
-    issuer: "Coursera",
-    year: "2023",
-    description: "Kursus SQL untuk analisis data.",
-    icon: Medal,
+    title: "Python for Data Science",
+    issuer: "IBM",
+    year: "2024",
+    description: "Kursus Python untuk ilmu data dari IBM.",
+    icon: Trophy,
     color: "from-accent to-rose-blush",
     image: null,
   },

@@ -17,13 +17,14 @@ const works = [
   {
     id: 16,
     title: "Intervox - AI Speech Studio",
-    category: "UI/UX Design",
+    category: "Capstone Project",
     year: "2025-12",
     displayYear: "2025",
     image: workIntervox,
-    description: "Desain landing page untuk platform AI Speech Analysis yang menggabungkan multimodal AI untuk membaca intonasi, tempo, dan gestur dalam satu dashboard dengan fitur live coaching dan real-time feedback",
+    description: "Capstone Project Dicoding Asah. Intervox blends multimodal AI to read intonation, tempo, and gestures in one dashboard. Pick a question, upload a video, then receive the JSON response and visual grade in seconds.",
     isDocument: false,
-    isLaptop: true,
+    isLaptop: false,
+    projectLink: "https://capstone-frontend-taupe.vercel.app/",
   },
   {
     id: 1,
@@ -291,9 +292,19 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
             <h3 className="text-2xl font-serif text-primary-foreground mb-2">
               {work.title}
             </h3>
-            <p className="text-primary-foreground/80 text-sm">
+            <p className="text-primary-foreground/80 text-sm mb-3">
               {work.description}
             </p>
+            {work.projectLink && (
+              <a 
+                href={work.projectLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
+              >
+                Lihat Demo
+              </a>
+            )}
           </div>
         </div>
       )}

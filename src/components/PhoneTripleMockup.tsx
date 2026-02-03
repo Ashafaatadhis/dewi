@@ -1,7 +1,5 @@
 interface PhoneTripleMockupProps {
   images: string[];
-  title?: string;
-  description?: string;
   className?: string;
 }
 
@@ -47,13 +45,13 @@ const PhoneFrame = ({ image, alt }: { image: string; alt: string }) => {
   );
 };
 
-const PhoneTripleMockup = ({ images, title, description, className = "" }: PhoneTripleMockupProps) => {
+const PhoneTripleMockup = ({ images, className = "" }: PhoneTripleMockupProps) => {
   if (images.length < 3) return null;
 
   return (
-    <div className={`relative flex flex-col items-center justify-center h-full ${className}`}>
+    <div className={`relative flex items-center justify-center ${className}`}>
       {/* Three phones side by side */}
-      <div className="flex items-center justify-center gap-3 mb-4">
+      <div className="flex items-center justify-center gap-3">
         <div className="transform scale-[0.55]">
           <PhoneFrame image={images[0]} alt="Home screen" />
         </div>
@@ -64,14 +62,6 @@ const PhoneTripleMockup = ({ images, title, description, className = "" }: Phone
           <PhoneFrame image={images[2]} alt="Profile screen" />
         </div>
       </div>
-      
-      {/* Description below phones */}
-      {(title || description) && (
-        <div className="text-center px-4 mt-2">
-          {title && <h4 className="text-lg font-serif text-foreground mb-1">{title}</h4>}
-          {description && <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>}
-        </div>
-      )}
     </div>
   );
 };

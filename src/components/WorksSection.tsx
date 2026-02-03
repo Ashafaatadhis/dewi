@@ -225,7 +225,7 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
     className={`group relative ${useRowSpan && index % 3 === 0 ? 'md:row-span-2' : ''}`}
   >
     <div className="relative overflow-hidden rounded-3xl shadow-elevated">
-      <div className={`${useRowSpan && index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]'} overflow-hidden bg-gradient-to-br from-muted/30 via-background to-muted/20 flex items-center justify-center p-6`}>
+      <div className={`${work.isLaptop || work.isDocument || work.isMobile ? (useRowSpan && index % 3 === 0 ? 'aspect-[3/4]' : 'aspect-[4/3]') : 'aspect-video'} overflow-hidden bg-gradient-to-br from-muted/30 via-background to-muted/20 flex items-center justify-center p-6`}>
         {work.isMobile && work.mobileImages ? (
           <PhoneTripleMockup 
             images={work.mobileImages}

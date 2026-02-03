@@ -161,6 +161,18 @@ const works = [
     isLaptop: false,
     githubLink: "https://github.com/Dewiwati/Eksperimen_SML_Dewi-Wati",
   },
+  {
+    id: 14,
+    title: "Bangun Hub API Docs",
+    category: "API Documentation",
+    year: "2025-12",
+    displayYear: "2025",
+    image: null,
+    description: "Dokumentasi API untuk platform Bangun Hub menggunakan format OpenAPI/Swagger untuk memudahkan integrasi dan pengembangan",
+    isDocument: false,
+    isLaptop: false,
+    githubLink: "https://github.com/Dewiwati/bangun-hub-api-docs",
+  },
 ];
 
 // Sort works by year-month (newest first) and take only 5 for display

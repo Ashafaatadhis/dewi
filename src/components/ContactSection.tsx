@@ -60,8 +60,8 @@ const ContactSection = () => {
             {/* Social links */}
             <div className="flex gap-4">
               {[
-                { icon: Github, href: "https://github.com/Dewiwati", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/dewi-wati-924024369", label: "LinkedIn" },
+                { icon: Github, href: "https://github.com/Dewiwati/bangun-hub-api-docs", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/dewi-wati-924024369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
               ].map((social, index) => (
                 <motion.a
                   key={index}

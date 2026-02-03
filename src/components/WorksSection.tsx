@@ -21,7 +21,7 @@ const works = [
     year: "2025-12",
     displayYear: "2025",
     image: workIntervox,
-    description: "Capstone Project di Program Asah led by Dicoding in association with Accenture. Intervox blends multimodal AI to read intonation, tempo, and gestures in one dashboard. Pick a question, upload a video, then receive the JSON response and visual grade in seconds.",
+    description: "Capstone Project di Program Asah led by Dicoding in association with Accenture.\n\nIntervox blends multimodal AI to read intonation, tempo, and gestures in one dashboard. Pick a question, upload a video, then receive the JSON response and visual grade in seconds.",
     isDocument: false,
     isLaptop: true,
     projectLink: "https://capstone-frontend-taupe.vercel.app/",
@@ -268,7 +268,7 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
               </svg>
             </div>
             <h3 className="text-lg font-serif text-foreground mb-2">{work.title}</h3>
-            <p className="text-muted-foreground text-sm px-4">{work.description}</p>
+            <p className="text-muted-foreground text-sm px-4 whitespace-pre-line">{work.description}</p>
             {work.githubLink && (
               <a 
                 href={work.githubLink} 
@@ -298,7 +298,7 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
             <h3 className="text-2xl font-serif text-primary-foreground mb-2">
               {work.title}
             </h3>
-            <p className="text-primary-foreground/80 text-sm mb-3">
+            <p className="text-primary-foreground/80 text-sm mb-3 whitespace-pre-line">
               {work.description}
             </p>
             {work.projectLink && (

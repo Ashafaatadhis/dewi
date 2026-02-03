@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import work6 from "@/assets/work-6.png";
 import workWemail from "@/assets/work-wemail.png";
+import workIntervox from "@/assets/work-intervox.png";
 import workKasirIkan from "@/assets/work-kasir-ikan.png";
 import workScientificPoster from "@/assets/work-scientific-poster.png";
 import workWisataBandung1 from "@/assets/work-wisata-bandung.png";
@@ -13,6 +14,17 @@ import DocumentMockup from "./DocumentMockup";
 import PhoneTripleMockup from "./PhoneTripleMockup";
 
 const works = [
+  {
+    id: 16,
+    title: "Intervox - AI Speech Studio",
+    category: "UI/UX Design",
+    year: "2025-12",
+    displayYear: "2025",
+    image: workIntervox,
+    description: "Desain landing page untuk platform AI Speech Analysis yang menggabungkan multimodal AI untuk membaca intonasi, tempo, dan gestur dalam satu dashboard dengan fitur live coaching dan real-time feedback",
+    isDocument: false,
+    isLaptop: true,
+  },
   {
     id: 1,
     title: "Laporan PKL - Web Proxy",

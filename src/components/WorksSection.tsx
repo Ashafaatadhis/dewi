@@ -216,8 +216,6 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
         {work.isMobile && work.mobileImages ? (
           <PhoneTripleMockup 
             images={work.mobileImages}
-            title={work.title}
-            description={work.description}
             className="w-full h-full transition-transform duration-700 group-hover:scale-105" 
           />
         ) : work.isLaptop && work.image ? (
@@ -266,8 +264,8 @@ const WorkCard = ({ work, index, useRowSpan = true }: WorkCardProps) => (
         )}
       </div>
       
-      {/* Overlay - only show for items with images */}
-      {work.image && (
+      {/* Overlay - show for items with images OR mobile items */}
+      {(work.image || work.mobileImages) && (
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
             <div className="flex items-center gap-2 mb-3">

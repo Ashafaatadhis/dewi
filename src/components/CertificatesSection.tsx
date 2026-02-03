@@ -1,61 +1,72 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Award, X, Lightbulb, GitBranch, Bot, Code } from "lucide-react";
+import { Award, X, Lightbulb, GitBranch, Bot, Code, Brain } from "lucide-react";
 import certDicodingPemrograman from "@/assets/cert-dicoding-pemrograman.jpg";
 import certDicodingLogic from "@/assets/cert-dicoding-logic.jpg";
 import certDicodingGit from "@/assets/cert-dicoding-git.jpg";
 import certDicodingAI from "@/assets/cert-dicoding-ai.jpg";
 import certDicodingPython from "@/assets/cert-dicoding-python.jpg";
+import certDicodingML from "@/assets/cert-dicoding-ml.jpg";
 
 const certificates = [
   {
     id: 1,
+    title: "Belajar Machine Learning untuk Pemula",
+    issuer: "Dicoding Indonesia",
+    year: "Oktober 2025",
+    description: "Mempelajari klasifikasi, regresi, clustering, dan hyperparameter tuning.",
+    icon: Brain,
+    color: "from-rose-blush to-primary",
+    image: certDicodingML,
+  },
+  {
+    id: 2,
     title: "Memulai Pemrograman dengan Python",
     issuer: "Dicoding Indonesia",
     year: "September 2025",
     description: "Mempelajari dasar Python, OOP, unit testing, dan library populer.",
     icon: Code,
-    color: "from-rose-blush to-primary",
+    color: "from-primary to-nude-400",
     image: certDicodingPython,
   },
   {
-    id: 2,
+    id: 3,
     title: "Dasar Pemrograman Pengembang Software",
     issuer: "Dicoding Indonesia",
     year: "September 2025",
     description: "Mempelajari dasar HTML, CSS, JavaScript, dan dokumentasi teknis aplikasi.",
     icon: Award,
-    color: "from-primary to-nude-400",
+    color: "from-nude-400 to-accent",
     image: certDicodingPemrograman,
   },
   {
-    id: 3,
+    id: 4,
     title: "Belajar Dasar AI",
     issuer: "Dicoding Indonesia",
     year: "September 2025",
     description: "Mempelajari konsep AI, Machine Learning, dan Deep Learning.",
     icon: Bot,
-    color: "from-nude-400 to-accent",
+    color: "from-accent to-rose-blush",
     image: certDicodingAI,
   },
   {
-    id: 4,
+    id: 5,
     title: "Belajar Dasar Git dengan GitHub",
     issuer: "Dicoding Indonesia",
     year: "Agustus 2025",
     description: "Mempelajari pengelolaan kode dengan Git, branching, dan kolaborasi tim di GitHub.",
     icon: GitBranch,
-    color: "from-accent to-rose-blush",
+    color: "from-rose-blush to-primary",
     image: certDicodingGit,
   },
   {
-    id: 5,
+    id: 6,
     title: "Logika Pemrograman (Programming Logic 101)",
     issuer: "Dicoding Indonesia",
     year: "Agustus 2025",
     description: "Mempelajari logika pemrograman dasar, gerbang logika, dan computational thinking.",
     icon: Lightbulb,
-    color: "from-rose-blush to-primary",
+    color: "from-primary to-nude-400",
     image: certDicodingLogic,
   },
 ];

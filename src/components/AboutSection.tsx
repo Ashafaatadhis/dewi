@@ -82,15 +82,16 @@ const AboutSection = () => {
               <span className="italic text-primary">Insight</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Saya adalah mahasiswa Teknik Informatika semester 5 yang tertarik menggali 
-              pola tersembunyi di balik data. Bagi saya, setiap dataset menyimpan cerita 
-              yang menunggu untuk diungkap dan ditransformasi menjadi keputusan strategis.
+              Mahasiswa Teknik Informatika semester 5 dengan ketertarikan kuat di bidang 
+              Machine Learning, Data Analysis, dan Software Development. Saya percaya bahwa 
+              teknologi terbaik lahir dari kombinasi pemahaman data yang mendalam dengan 
+              kemampuan engineering yang solid.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Di luar dunia data, saya juga menikmati membangun aplikasi web dan mobile 
-              yang fungsional dan user-friendly. Kombinasi analytical thinking dengan 
-              kemampuan development memungkinkan saya menciptakan solusi end-to-end yang 
-              tidak hanya cerdas, tapi juga mudah diakses.
+              Melalui berbagai pelatihan intensif dan pengerjaan project nyata, saya terus 
+              mengembangkan kompetensi di Python, Deep Learning, hingga pengembangan aplikasi 
+              web dan mobile. Setiap project yang saya kerjakan adalah kesempatan untuk 
+              menerapkan ilmu dan menciptakan solusi yang berdampak.
             </p>
 
             {/* Skills */}

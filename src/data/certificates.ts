@@ -34,7 +34,6 @@ export const certificates: Certificate[] = [
     icon: FileCheck,
     color: "from-accent to-primary",
     image: certAsahKelulusan,
-    hidePreview: true,
   },
   {
     id: 1,

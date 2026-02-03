@@ -4,10 +4,10 @@ import { certificates } from "@/data/certificates";
 const AboutSection = () => {
   const certificateCount = certificates.length;
   const skills = [
-    { name: "Data Analysis", level: 90 },
-    { name: "Python", level: 85 },
-    { name: "SQL", level: 88 },
-    { name: "Web Development", level: 80 },
+    { name: "Machine Learning", level: 90 },
+    { name: "Python", level: 88 },
+    { name: "Data Analysis", level: 85 },
+    { name: "Web Development", level: 82 },
   ];
 
   return (
@@ -82,14 +82,16 @@ const AboutSection = () => {
               <span className="italic text-primary">Insight</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Saya adalah mahasiswa Teknik Informatika dengan passion yang mendalam di bidang 
-              Data Analysis dan pengembangan web. Saya percaya bahwa setiap data memiliki cerita 
-              yang perlu diungkap untuk menghasilkan keputusan yang lebih baik.
+              Saya adalah mahasiswa Teknik Informatika semester 5 dengan fokus di bidang 
+              Machine Learning dan Data Analysis. Telah menyelesaikan Program Asah led by 
+              Dicoding x Accenture dan membangun berbagai project AI seperti Sentiment Analysis, 
+              Fraud Detection, dan Image Classification dengan CNN.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Selama kuliah, saya aktif mengerjakan berbagai project analisis data dan web development. 
-              Saya terus belajar teknologi terbaru seperti Python, SQL, dan tools visualisasi data 
-              untuk mengasah kemampuan saya di bidang ini.
+              Selain ML, saya juga aktif mengembangkan aplikasi web dan mobile seperti WeMAIL, 
+              Kasir Toko Ikan, dan Wisata Bandung. Dengan {certificateCount}+ sertifikasi dari Dicoding, 
+              saya terus mengasah kemampuan di Python, TensorFlow, dan MLOps untuk membangun 
+              solusi berbasis data yang berdampak.
             </p>
 
             {/* Skills */}

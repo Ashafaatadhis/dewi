@@ -32,7 +32,7 @@ const ContactSection = () => {
             {/* Contact details */}
             <div className="space-y-4 mb-8">
               <motion.a
-                href="mailto:dewiwati182004@gmail.com"
+                href="mailto:dewiwati@student.university.ac.id"
                 whileHover={{ x: 5 }}
                 className="flex items-center gap-4 group"
               >
@@ -40,7 +40,7 @@ const ContactSection = () => {
                   <Mail className="w-5 h-5 text-primary-foreground" />
                 </div>
                 <span className="text-foreground group-hover:text-primary transition-colors">
-                  dewiwati182004@gmail.com
+                  dewiwati@student.university.ac.id
                 </span>
               </motion.a>
 
@@ -52,7 +52,7 @@ const ContactSection = () => {
                   <MapPin className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <span className="text-muted-foreground">
-                  Indramayu, Indonesia
+                  Jakarta, Indonesia
                 </span>
               </motion.div>
             </div>
@@ -60,8 +60,8 @@ const ContactSection = () => {
             {/* Social links */}
             <div className="flex gap-4">
               {[
-                { icon: Github, href: "https://github.com/Dewiwati/bangun-hub-api-docs", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/dewi-wati-924024369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", label: "LinkedIn" },
+                { icon: Github, href: "#", label: "GitHub" },
+                { icon: Linkedin, href: "#", label: "LinkedIn" },
               ].map((social, index) => (
                 <motion.a
                   key={index}
